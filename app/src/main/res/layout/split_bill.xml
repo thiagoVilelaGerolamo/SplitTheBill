@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/billTotalEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="400dp"
+        android:ems="10"
+        android:hint="Bill Total"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"/>
+
+    <EditText
+        android:id="@+id/numberFriendsEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="350dp"
+        android:ems="10"
+        android:hint="Number of friends"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/billTotalEt"
+        app:layout_constraintVertical_bias="1.0"/>
+
+    <EditText
+        android:id="@+id/valueAlreadyPaidEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="300dp"
+        android:ems="10"
+        android:hint="Value already paid"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberFriendsEt"
+        app:layout_constraintVertical_bias="1.0"/>
+
+    <Button
+        android:id="@+id/splitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Split"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/valueAlreadyPaidEt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/billDivFinalValueSubtitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="175dp"
+        android:text="Bill division value"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/splitBtn"/>
+
+    <TextView
+        android:id="@+id/billDivFinalValueTv"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="175dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/yourBillTv"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="100dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/billDivFinalValueTv"/>
+
+    <Button
+        android:id="@+id/informationBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/purple_500"
+        android:hint="Information about second value"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/yourBillTv"
+        app:tint="@color/white"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/returnBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@color/purple_500"
+        android:hint="Return to main"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/informationBtn"
+        app:tint="@color/white"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

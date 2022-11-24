@@ -15,3 +15,5 @@ pode ser numa outro tela apropriada para isso. Apenas o nome do integrante e o v
 devem ser mostrados na lista. Para saber o que foi comprado é necessário abrir uma tela de
 detalhes clicando na célula correspondente.
 
+Link para a explicação do projeto em pt-br:
+https://drive.google.com/file/d/1SE3E54Ob2T5cvJBW1uSJGXoyx6rqToG0/view?usp=sharing
